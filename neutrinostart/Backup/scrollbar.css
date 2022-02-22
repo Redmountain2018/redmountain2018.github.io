@@ -1,0 +1,58 @@
+::-webkit-scrollbar
+{
+    width: 17px;
+    height: 17px;
+}
+::-webkit-scrollbar-track-piece
+{
+    background-color: #ececec;
+    -webkit-border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:vertical
+{
+    width: 17px;
+    background-color: #c2c2c2;
+    -webkit-border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:horizontal
+{
+    height: 17px;
+    background-color: #c2c2c2;
+    -webkit-border-radius: 0px;
+}
+   /*滚动条上的按钮--竖直滚动条向上*/
+ 
+   ::-webkit-scrollbar-button:decrement {
+      height: 17px;
+      background: url("./image/ScrollbarTop.png") no-repeat;
+      background-color: #ececec;
+    }   
+/*滚动条上的按钮--竖直滚动条向下*/
+ 
+   ::-webkit-scrollbar-button:increment {
+      height: 17px;
+      background: url("./image/ScrollbarBottom.png") no-repeat;
+      background-color: #ececec;
+    }
+ 
+    /*滚动条上的按钮--水平滚动条向左*/
+ 
+    ::-webkit-scrollbar-button:horizontal:decrement {
+
+      width: 17px;
+      background: url("./image/ScrollbarLeftH.png") no-repeat;
+      background-color: #ececec;
+    }
+ 
+    /*滚动条上的按钮--水平滚动条向右*/
+ 
+    ::-webkit-scrollbar-button:horizontal:increment {
+     
+      width: 17px;
+      background: url("./image/ScrollbarRightH.png") no-repeat;
+      background-color: #ececec;
+    }
+::-webkit-scrollbar-corner
+{
+    background-color:#b3b3b3
+}

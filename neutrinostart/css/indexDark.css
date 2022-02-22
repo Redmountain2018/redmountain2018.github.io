@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+    font-family: Microsoft Yahei UI,sans-serif;
+}
+
+#bgbox {
+    z-index: -100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 150%;
+    height: 150%;
+    background-color: rgb(70, 70, 70);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#blurbox {
+    z-index: -10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 150%;
+    height: 150%;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0,0,0,0.2);
+}
+
+#container {
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#clock {
+    position: relative;
+    bottom: 20px;
+    font-size: 50px;
+    color: rgb(0,0,0);
+    text-align: center;
+    text-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+#search {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 0px;
+    display: flex;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.search-box {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 20px;
+    width: 400px;
+    transition: width 0.2s ease-in-out;
+    user-select: text;
+    color:rgb(255,255,255);
+}
+
+.search-box-focus {
+    width: 450px
+}
+
+#search > div {
+    display: inline;
+    border-radius: 5px;
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    background-image: url(../img/godark.png);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#search > div:hover {
+    background-color: rgba(0,0,0, 0.2);
+}
+
+#engine {
+    position: relative;
+    top: 5px;
+    visibility: hidden;
+    text-align: center;
+    color: rgb(255,255,255);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.engine-item {
+    position: relative;
+    top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    backdrop-filter: blur(5px);
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.engine-item-selected {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+#hitokoto {
+    position: absolute;
+    top: 200px;
+    font-size: 16px;
+    color: rgb(255,255,255);
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease-in-out,color 0.1s ease-in-out;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);;
+}
+
+#hitokoto:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(124, 124, 124);
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+#text {
+    color: rgb(255,255,255);
+}
