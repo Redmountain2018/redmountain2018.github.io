@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<title>AuroraStudio论坛</title>
+
+<style>
+#frame {
+  left:0px;
+  top:0px;
+  position:absolute;
+  width:100%;
+  height:100%;
+  border-width:0px;
+}
+
+</style>
+
+<script>
+function createXMLHttpRequest() {
+				if(window.XMLHttpRequest) {
+					XMLHttpR = new XMLHttpRequest();
+				} else if(window.ActiveXObject) {
+					try {
+						XMLHttpR = new ActiveXObject("Msxml2.XMLHTTP");
+					} catch(e) {
+						try {
+							XMLHttpR = new ActiveXObject("Microsoft.XMLHTTP");
+						} catch(e) {}
+					}
+				}
+			}
+
+			function sendRequest(url) {
+				createXMLHttpRequest();
+				XMLHttpR.open("GET", url, true);
+				XMLHttpR.setRequestHeader("Content-Type", "text/html;charset=gb2312");
+				XMLHttpR.onreadystatechange = processResponse;
+				XMLHttpR.send(null);
+        alert("a");
+			}
+
+			function processResponse() {
+				if(XMLHttpR.readyState == 4 && XMLHttpR.status == 200) {
+
+					document.write(XMLHttpR.responseText);
+				}
+			}
+</script>
+
+<body οnlοad='sendRequest("https://aurorast.freeflarum.com/");'>
+<iframe src="https://aurorast.freeflarum.com/" id="frame"></iframe>
+
+
+</body>
+
+</html>
