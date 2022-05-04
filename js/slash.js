@@ -1,10 +1,3 @@
 window.onload=function URLFormat() {
-    var domain = url.split("/")[0];
-    var answer;
-    if(url == domain){
-      answer = url + "/";
-    } else {
-      answer = url;
-    }
-    alert(answer);
+    if(window.location.href[window.location.href.length-1]!="/")window.location.href+="/";
 }
