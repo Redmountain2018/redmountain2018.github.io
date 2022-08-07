@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta class="foundation-mq-small"><meta class="foundation-mq-small-only"><meta class="foundation-mq-medium"><meta class="foundation-mq-medium-only"><meta class="foundation-mq-large"><meta class="foundation-mq-large-only"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-xlarge-only"><meta class="foundation-mq-xxlarge"><meta class="foundation-data-attribute-namespace">
+  <meta name="author" content="Redmountain & AuroraStudio">
+  <meta name="description" content="Violet是基于BassLib开发的音频播放器">
+  <title>Violet 播放器</title>
+  <link rel="icon" href="./Violet.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./Violet.png" type="image/x-icon">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./index_files/foundation.min.css">
+  <script src="./index_files/jquery.min.js.下载"></script>
+  <script src="./index_files/foundation.min.js.下载"></script><style></style>
+  <script src="./index_files/modernizr.js.下载"></script>
+  <style>
+    h1 {
+
+      text-align: center;
+      font-family: sans-serif;
+      color: #20123a;
+      margin-bottom: 16px;
+      font-size: 2.5rem;
+      line-height: 1.1;
+    }
+
+    .text1 {
+      text-align: left;
+      font-family: sans-serif;
+      color: #20123a;
+      margin-bottom: 16px;
+      font-size: 2.5rem;
+      line-height: 1.1;
+      margin-left: 32px;
+      margin-top: 20%;
+    }
+
+    .text2 {
+      text-align: left;
+      font-family: sans-serif;
+      margin-top: 0;
+      padding: 0;
+      line-height: 1.125;
+      margin-left: 32px;
+    }
+
+    .text3 {
+      text-align: right;
+      font-family: sans-serif;
+      color: #20123a;
+      margin-bottom: 16px;
+      font-size: 2.5rem;
+      line-height: 1.1;
+      margin-right: 32px;
+      margin-top: 20%;
+    }
+
+    .img_wrap{
+	    text-align:center;
+    }
+
+    .c { /* 按钮美化 */
+	    /*width: 170px;*/ /* 宽度 */
+	    /*height: 45px;*/ /* 高度 */
+      padding:0px;
+	    border-radius: 50px; /* 边框半径 */
+	    background: #FFFFFF00; /* 背景颜色 */
+	    cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+      outline: none;
+	    color: black;/* 字体颜色 */
+      border-radius: 50px;
+      background: #FFFFFF00;
+      transition: color 0.2s ease-in-out,transform 0.2s ease-in-out;
+    }
+    .c:hover { /* 鼠标移入按钮范围时改变颜色 */
+	    background: #FFFFFF00;
+      color:#139be8;
+      transition: color 0.2s ease-in-out,transform 0.2s ease-in-out;
+      transform:scale(1.2);
+    }
+
+    .f { /* 按钮美化 */
+	    width: 300px; /* 宽度 */
+	    height: 50px; /* 高度 */
+      border-radius: 50px;
+      background: #139be8;
+      box-shadow:  10px 10px 20px #bebebe;
+                /*  -20px -20px 60px #ffffff;*/
+      cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+      transition: color 0.2s ease-in-out,transform 0.2s ease-in-out;
+    }
+
+    .f:hover { /* 鼠标移入按钮范围时改变颜色 */
+	    background: #ffffff;
+      transform:scale(1.05);      
+      transition: color 0.2s ease-in-out,transform 0.2s ease-in-out,background 0.2s ease-in-out;
+    }
+    .f:active {
+      transform:scale(0.9);
+      background: #57b4fa;
+    }
+    f:focus {
+      background: #57b4fa;
+    }
+    .button { /* 按钮美化 */
+	    width: 17px; /* 宽度 */
+	    height: 50px; /* 高度 */
+      background: #139be8;
+      cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+	    outline: none; /* 不显示轮廓线 */
+	    font-family: sans-serif; /* 设置字体 */
+	    color: white; /* 字体颜色 */
+	    font-size: 1px; /* 字体大小 */
+      border-radius: 50px;
+      float: right;               
+    }
+
+    .button:hover { /* 鼠标移入按钮范围时改变颜色 */
+	    background: #57b4fa;
+    }
+
+    .photo1{
+      grid-column-gap: 80px;
+
+      grid-template-areas: "body media";
+             
+      max-width: 1344px;
+      min-width: 304px;
+      float: right;
+      margin-top:-15%;
+    }
+  </style>
+	
+  <meta class="foundation-mq-topbar"></head>
+  <body class="f-topbar-fixed">
+
+    <div class="fixed">
+
+      <nav class="top-bar" data-topbar="">
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="/violet/"><img src="./violettext.png" width="80" height="33" alt="Violet">播放器</a></h1>
+          </li>
+
+        </ul><section class="top-bar-section">
+          <ul class="left">
+            <li class="active"><a href="/violet">主页</a></li>
+            <li class=""><a href="/">AuroraStudio 官网</a></li>
+        
+      </ul></section><section class="top-bar-section">
+          <ul class="right">
+            <li class="active"><a href="https://jq.qq.com/?_wv=1027&k=LMxl4ZPJ" class="button"><b>加入公测</b></a></li>
+          </ul>
+        </section></nav>
+
+    <div style="padding:20px;">
+
+    </div>
+
+    <!-- 初始化 Foundation JS -->
+    <script>
+    $(document).ready(function() {
+        $(document).foundation();
+    })
+    </script>
+    <script type="text/javascript" src="../js/slash.js"></script>
+    </div>
+
+
+
+    <div class="img_wrap">
+          <img src="./Violet.png" alt="Violet 图标" width="200" height="200">
+    </div>
+    <h1><b><img src="./violettext.png" width="200" height="79" alt="Violet">播放器</b></h1>
+    <center><p>一个轻量化的音频播放器</p>
+
+    </a><center><a href="https://jq.qq.com/?_wv=1027&k=LMxl4ZPJ"><button type="button" class="f" title="下载 Violet"><b>加入公测</b></button>
+    </a>
+    <br>
+    <a href="/files/violet/VioletPlayer_Preview_4_Pre1.7z">
+      <button type="button" class="f" title="下载 Violet"><b>下载公测版本</b></button>
+    </a>
+    </a>
+
+    <center><a href="/violet/log/"><button type="button" class="c" title="更新日志">更新日志</button>
+    </a>
+    <br>
+    <a href="/violet/contributors/"><button type="button" class="c" title="贡献者名单">贡献者名单</button>
+    </a>
+    <p>              </p>
+    <center><p>⚠️Violet可运行于<b>安装了Platform Update的Windows7 SP1 及以上Windows操作系统</b></br>以下版本均不支持！</p>
+    <center>
+    <p><b>推荐使用Windows 11运行Violet</b></p>
+      <h3 class="text1"><b>Violet正在开发中......</b></h3>
+      <img src="./index_files/安全.png" alt="隐私安全" class="photo1"> 
+    
+    <p class="text2">目前开发进度:75%</p>  
+    <p class="text2">最新Build：Build 126.0.violet_prerelease.2200805-1650</p>  
+    <p class="text2">当前版本：Preview 4</p>  
+    <p class="text2">下一个版本:Preview 5</p>  
+    <p class="text2">Violet公测已经开启</p>  
+  
+    <br>
+
+
+    <a href="https://jq.qq.com/?_wv=1027&k=LMxl4ZPJ">
+      <button type="button" class="f" title="下载 Violet"><b>加入公测</b></button>
+    </a>
+    <br>
+    <a href="/files/violet/VioletPlayer_Preview_4_Pre1.7z">
+      <button type="button" class="f" title="下载 Violet"><b>下载公测版本</b></button>
+    </a>
+
+  </center>
+    <h7><br>
+      ©AuroraStudio 2019 - 2022</br>Developed by Noah Zhu</h7>
+    <a href="/">
+    <br>  
+    <img src="AuroraStudio.png" alt="AuroraStudio" width="125.7333333333333" height="23">
+    </a>
+    </center>
+    </center></center></center></center></center></center>
+  </body>
+</html>
