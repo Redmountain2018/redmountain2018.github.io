@@ -1,0 +1,463 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#e6e6e6">
+  <meta name="author" content="Noah Zhu">
+  <meta name="keywords" content="Software">
+  
+    <meta name="description" content="软件工作室">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AuroraStudio">
+<meta property="og:url" content="http://redmountain2018.github.io/">
+<meta property="og:site_name" content="AuroraStudio">
+<meta property="og:description" content="软件工作室">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Noah Zhu">
+<meta property="article:tag" content="Software">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  <title>AuroraStudio</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"redmountain2018.github.io","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<!--script src="./index_files/jquery.min.js.下载"></script>
+<script src="./index_files/foundation.min.js.下载"></script><style></style>
+<script src="./index_files/modernizr.js.下载"></script>
+
+<script>//初始化Foundation.js
+  $(document).ready(function() {
+      $(document).foundation();
+  })
+  </script-->
+
+<style>
+  h1 {
+
+    text-align: center;
+    font-family: sans-serif;
+  
+    margin-bottom: 16px;
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+
+  .text1 {
+    text-align: left;
+    font-family: sans-serif;
+  
+    margin-bottom: 16px;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-left: 32px;
+    margin-top: 20%;
+  }
+
+  .text2 {
+    text-align: left;
+    font-family: sans-serif;
+    margin-top: 0;
+    padding: 0;
+    line-height: 1.125;
+    margin-left: 32px;
+  }
+
+  .text3 {
+    text-align: right;
+    font-family: sans-serif;
+  
+    margin-bottom: 16px;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-right: 32px;
+    margin-top: 20%;
+  }
+
+  .img_wrap{
+    text-align:center;
+  }
+
+  .c { /* 按钮美化 */
+    /*width: 170px;*/ /* 宽度 */
+    /*height: 45px;*/ /* 高度 */
+    padding:0px;
+    border-radius: 50px; /* 边框半径 */
+    background: #FFFFFF00; /* 背景颜色 */
+    cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+    outline: none;
+    color: black;/* 字体颜色 */
+    border-radius: 50px;
+    background: #FFFFFF00;
+    transition: color 0.2s ease-in-out,transform 0.2s ease-in-out;
+    border-width:0px;       
+  }
+  .c:hover { /* 鼠标移入按钮范围时改变颜色 */
+    background: #FFFFFF00;
+    color:#139be8;
+    transition: color 0.2s ease-in-out,transform 0.2s ease-in-out;
+    border-width:0px;       
+    transform:scale(1.2);
+  }
+
+  .f { /* 按钮美化 */
+    width: 300px; /* 宽度 */
+    height: 50px; /* 高度 */
+    border-radius: 50px;
+    background: #139be8;
+    box-shadow:  10px 10px 20px #bebebe;
+              /*  -20px -20px 60px #ffffff;*/
+    cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+    transition: color 0.2s ease-in-out,transform 0.2s ease-in-out;
+    border-width:0px;       
+    color:#FFFFFF;
+  }
+
+  .f:hover { /* 鼠标移入按钮范围时改变颜色 */
+    background: #55c1ff;
+    transform:scale(1.05);      
+    transition: color 0.2s ease-in-out,transform 0.2s ease-in-out,background 0.2s ease-in-out;
+    color:#FFFFFF;
+    border-width:0px;       
+  }
+  .f:active {
+    transform:scale(0.9);
+    background: #57b4fa;
+    border-width:0px;       
+  }
+  f:focus {
+    background: #57b4fa;
+    border-width:0px;       
+  }
+  .button { /* 按钮美化 */
+    width: 17px; /* 宽度 */
+    height: 50px; /* 高度 */
+    background: #139be8;
+    cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+    outline: none; /* 不显示轮廓线 */
+    font-family: sans-serif; /* 设置字体 */
+    color: white; /* 字体颜色 */
+    font-size: 1px; /* 字体大小 */
+    border-radius: 50px;
+    float: right;  
+    border-width:0px;             
+  }
+
+  .button:hover { /* 鼠标移入按钮范围时改变颜色 */
+    background: #57b4fa;
+    border-width:0px;       
+  }
+
+  .photo1{
+    grid-column-gap: 80px;
+
+    grid-template-areas: "body media";
+           
+    max-width: 1344px;
+    min-width: 304px;
+    float: right;
+    margin-top:-15%;
+  }
+</style>
+
+
+<body>
+  <header style="height: 100vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>AuroraStudio</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+            <li class="nav-item">
+              <a class="nav-link" href="https://jq.qq.com/?_wv=1027&k=LMxl4ZPJz">
+                <i class="iconfont icon-link-fill"></i>
+                加入公测
+              </a>
+            </li>
+          
+        
+        
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/background.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          
+          
+          <div class="page-header text-center fade-in-up">
+            
+              <div class="img_wrap">
+                <img src="./Violet.png" alt="Violet 图标" width="200" height="200">
+          </div>
+          <h1><b><img src="./violettext.png" width="200" height="79" alt="Violet"></b></h1>
+          <center><p>一个轻量化的音频播放器</p>
+            </span>
+
+            
+          </div>
+
+          
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div class="py-5" id="board"
+          style=margin-top:0>
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+
+    
+  </a><center><a href="https://jq.qq.com/?_wv=1027&k=LMxl4ZPJ"><button type="button" class="f" title="下载 Violet"><b>加入公测</b></button>
+  </a>
+  <br> <br>
+  <a href="/files/violet/VioletPlayer_Preview_4_Pre1.7z">
+    <button type="button" class="f" title="下载 Violet"><b>下载公测版本</b></button>
+  </a>
+  </a>
+  <br><br>
+  <center><a href="/violet/log/">更新日志</a>
+  <br>
+  <a href="/violet/contributors/">贡献者名单</a>
+  <p>              </p>
+  <center><p>⚠️Violet可运行于<b>安装了Platform Update的Windows7 SP1 及以上Windows操作系统</b></br>以下版本均不支持！</p>
+  <center>
+  <p><b>推荐使用Windows 11运行Violet</b></p>
+    <h3 class="text1"><b>Violet正在开发中......</b></h3>
+    <img src="./index_files/安全.png" alt="隐私安全" class="photo1"> 
+  
+  <p class="text2">目前开发进度:75%</p>  
+  <p class="text2">最新Build：Build 126.0.violet_prerelease.2200805-1650</p>  
+  <p class="text2">当前版本：Preview 4</p>  
+  <p class="text2">下一个版本:Preview 5</p>  
+  <p class="text2">Violet公测已经开启</p>  
+
+  <br>
+
+    
+  
+
+
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="" target="_blank" rel="nofollow noopener"><span>AuroraStudio 2022</span></a>     <br> <a href="\links" target="_blank" rel="nofollow noopener"><span>友情链接</span></a> <br> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Powered by Hexo</span></a> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span> And Theme:Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+        typing(title);
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<script src="/js/slash.js"></script>
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
