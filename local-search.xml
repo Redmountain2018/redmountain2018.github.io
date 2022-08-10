@@ -4,32 +4,19 @@
   
   
   <entry>
-    <title>Welcome</title>
-    <link href="/2022/02/23/Welcome/"/>
-    <url>/2022/02/23/Welcome/</url>
+    <title>Violet Player Preview 5 即将发布</title>
+    <link href="/2022/08/10/Violet%20Player%20Preview%205%20%E5%8D%B3%E5%B0%86%E5%8F%91%E5%B8%83/"/>
+    <url>/2022/08/10/Violet%20Player%20Preview%205%20%E5%8D%B3%E5%B0%86%E5%8F%91%E5%B8%83/</url>
     
-    <content type="html"><![CDATA[<hr><p>这是AuroraStudio的官方网站，同时也是给所有团队成员的博客。以后的关于软件的内容将发布到这里.</p>]]></content>
+    <content type="html"><![CDATA[<hr><p>Violet Player Preview 5 即将发布。</p><p>Violet Player自从项目开始开发以来，开发者做了许多努力来保证在添加功能的同时保持软件的稳定性和优秀的用户体验。经过了两个月的开发，Violet Player Preview 5即将发布。</p><p>Preview 5将是预览版中更新内容最多的一个版本。</p><p>在Violet Player Preview 5中，我们做了许多UI上和性能上的优化。并听取了内测者们的意见。</p><p>Violet Player Preview 5将在所有功能全部开发完后发布。</p><p>更新内容：</p><p>1.修复了播放页面歌曲信息过长会超出宽度限制的bug</p><p>2.修复了播放时歌词无法正常重置的bug</p><p>3.现在音频播放&#x2F;停止可通过空格键控制</p><p>4.修改了歌曲列表的样式</p><p>5.增添列表控制按钮</p><p>6.现在列表中歌曲播放完毕后会自动播放下一首</p><p>7.现在播放进度条和音量控制条可以通过拖动鼠标调节</p><p>8.新增起始页</p><p>9.适配Windows中的暗色模式[未完成]</p><p>10.歌单功能[未完成]</p><p>11.多语言支持[未完成]</p><p><img src="/images/violet_playing.png" alt="img"></p>]]></content>
     
     
     
     <tags>
       
-      <tag>Welcome</tag>
+      <tag>Violet</tag>
       
     </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="/2022/01/19/hello-world/"/>
-    <url>/2022/01/19/hello-world/</url>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
     
   </entry>
   
