@@ -13,6 +13,8 @@
   -  [Utilis Hardware Toolbox](/software/UHT)
   -  [晴空音乐播放器](/software/QKPlayer)
   -  [Aurora Hardware Check](/software/AHC)
+  -  [Platinum浏览器](/software/platinum)
+  -  [Flysoft PE](/software/flysoftpe)
 - 游戏
   - [MaxCraft](/game/MaxCraft)
   - [Town服务器](/game/town)
@@ -22,6 +24,7 @@
   - [晴空](/devMembers/Qing-Kong)
   - [ChenZR](/devMembers/ChenZR)
   - [What_Damon](/devMembers/Damon233)
+  - [Flysoft](/devMembers/flysoft)
 - Game分部成员
   - [Aurora_极光](/gameMembers/aurora)
   - [福瑞斯特 · 梅普尔](/gameMembers/forest_maple)
