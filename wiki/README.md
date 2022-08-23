@@ -2,6 +2,8 @@
 
 这是AuroraStudio Wiki，在这里，我们会介绍Aurora Studio所有开发过的软件和内部情况~
 
+<img src="/favicon.png" alt="img" style="zoom:33%;" />
+
 ------
 
 Dev分布部官网：https://aurorast.cn

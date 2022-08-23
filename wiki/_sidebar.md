@@ -34,6 +34,8 @@
 
 </br>
 
+<center><img src="/img/aurorastudio.png" alt="img" style="zoom:50%;" /></center>
+
 <center><b>Copyright AuroraStudio 2019 - 2022</b></center>
 
 <center>本Wiki属于所有人</center>
