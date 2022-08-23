@@ -1,10 +1,12 @@
 ## 关于Violet
 
+<img src="../img/violet.png" alt="img" style="zoom:33%;" />
+
 Violet于2022年7月立项，基于Un4seen的BASS多媒体库开发，其目的是为了打造一款符合Windows 11原生界面的Win32音频播放器。
 
 本软件是Noah Zhu在高DPI设备上高清显示的一次探索，并且在rc1中有了较好的优化体验。
 
-“Violet”意为紫罗兰，是Neutrino浏览器早期版本开发代号，取本名是因为Noah Zhu有一个分开的朋友昵称叫“Violet”。
+“Violet”意为紫色，是Neutrino浏览器早期版本开发代号，取本名是因为Noah Zhu有一个分开的朋友昵称叫“Violet”。
 
 本软件预计将于2023年春节发布正式版。
 
@@ -31,6 +33,7 @@ Violet于2022年7月立项，基于Un4seen的BASS多媒体库开发，其目的�
 - 专辑使用类轻拟态阴影
 - 任务栏缩略图可以控制音乐播放
 - 使用Direct2D渲染
+- 插件（尚未完成）
 - 奇怪的BUG
 
 ## Violet的其他信息
@@ -38,4 +41,8 @@ Violet于2022年7月立项，基于Un4seen的BASS多媒体库开发，其目的�
 官网：https://aurorast.cn/violet
 
 Violet最低需要安装在安装了Platform Update的Windows 7 SP1上。
+
+## 相关视频：
+
+<iframe src="//player.bilibili.com/player.html?aid=856482705&bvid=BV1TV4y1j7LZ&cid=787254002&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 

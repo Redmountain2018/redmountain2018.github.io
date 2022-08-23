@@ -1,16 +1,18 @@
-## 关于Utilits Hardware Toolbox
+## 关于Utilis Hardware Toolbox
+
+<img src="../img/utilis.png" alt="img" style="zoom:12%;" />
 
 本软件由What_Damon开发，使用了ChenZR的Aurora Hardware Check模块，是一款图吧工具箱，卡硬工具箱和云糕工具箱的轻量替代品。
 
 **注意，本软件尚未发布！**
 
-## Utilits Hardware Toolbox亮点
+## Utilis Hardware Toolbox亮点
 
 - 足够简单，没有花里胡哨的功能
 - 人性化
 - 轻量
 
-## Utilits Hardware Toolbox工具包
+## Utilis Hardware Toolbox工具包
 
 - 电池
   - BatteryInfoView
@@ -81,6 +83,6 @@
   - WinDbg
   - Keyboard Test Utility
 
-## Utilits Hardware Toolbox其他信息
+## Utilis Hardware Toolbox其他信息
 
 因为开发受阻，尚未发布，发布后建议在Windows 7或者更新版本运行！

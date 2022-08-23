@@ -1,5 +1,7 @@
 ## 关于晴空音乐播放器
 
+<img src="../img/qkplayer.png" alt="img" style="zoom:50%;" />
+
 晴空音乐播放器（Qing Kong Music Player）是晴空开发的一款基于BASS媒体库的轻量化高级播放器，相比Violet有更好的自定义性和更多的功能，并且BUG较少。
 
 如果你追求高度自定义，晴空音乐播放器显然是更好的选择。

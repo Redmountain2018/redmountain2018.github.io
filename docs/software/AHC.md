@@ -1,6 +1,6 @@
 ## 关于Aurora Hardware Check
 
-本软件是由ChenZR开发的一款硬件检测工具，使用Windows的wmic指令获取硬件和软件信息，以及判断是否在虚拟机中运行，本软件有单独的模块可以使用，Utilits Hardware Toolbox使用的就是本模块。
+本软件是由Noah Zhu和ChenZR开发的一款硬件检测工具，使用Windows的wmic指令获取硬件和软件信息，以及判断是否在虚拟机中运行，本软件有单独的模块可以使用，Utilits Hardware Toolbox使用的就是本模块。
 
 本模块已经停止开发，暂时无人维护。
 
